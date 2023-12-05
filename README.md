@@ -7,5 +7,5 @@ Very Small Linux Distro
 **QEMU:**
 
 ```
-boot: /bzImage -initrd=/init.cpio
+.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio
 ```
