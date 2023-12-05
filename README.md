@@ -4,8 +4,8 @@ Very Small Linux Distro
 
 * [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg)
 
-* Linux Kernel: `bzImage`
-* BusyBox: `init.cpio`
+* Linux Kernel 6.7.0-rc4: `bzImage`
+* BusyBox 1.37.0: `init.cpio`
 
 **QEMU:**
 ```
