@@ -1,4 +1,4 @@
-# MiniLinux
+# BusyBox Linux
 
 Very Small Linux Distro 14.7MB
 
