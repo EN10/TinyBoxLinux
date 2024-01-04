@@ -14,3 +14,4 @@ make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig
 
 apt install bc libelf-dev libssl-dev
 make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8
+make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8 CONFIG_PREFIX=~/initramfs install
