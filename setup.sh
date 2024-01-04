@@ -15,6 +15,7 @@ make menuconfig
 make -j 8
 make CONFIG_PREFIX=~/initramfs install
 cd ~/initramfs
+printf "#\!/bin/sh\n\n/bin/sh\n" > init
 nano init
 # see init file
 rm linuxrc
