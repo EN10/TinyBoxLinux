@@ -6,6 +6,7 @@ git clone --depth 1 https://github.com/torvalds/linux.git
 cd linux
 make menuconfig
 make -j 8
+cp arch/x86_64/boot/bzImage ~/
 
 # userspace busybox
 git clone --depth 1 https://git.busybox.net/busybox
@@ -14,6 +15,7 @@ make menuconfig
 # Settings - Build static binary
 make -j 8
 make CONFIG_PREFIX=~/initramfs install
+# make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8 CONFIG_PREFIX=~/initramfs install
 cd ~/initramfs
 printf "#\!/bin/sh\n\n/bin/sh\n" > init
 nano init
