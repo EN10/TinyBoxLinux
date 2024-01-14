@@ -14,3 +14,5 @@ make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig
 
 apt install bc libelf-dev libssl-dev
 make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8
+
+docker cp a123b456:/root/linux/arch/x86/boot/bzImage ./
