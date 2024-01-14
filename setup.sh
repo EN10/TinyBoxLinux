@@ -14,7 +14,7 @@ cd busybox
 make menuconfig
 # Settings - Build static binary
 make -j 8
-make CONFIG_PREFIX=~/initramfs install
+make CONFIG_PREFIX=../initramfs install
 # make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8 CONFIG_PREFIX=~/initramfs install
 cd ~/initramfs
 echo -e '#!/bin/sh\n\n/bin/sh' > init
