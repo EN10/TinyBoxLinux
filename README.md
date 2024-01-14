@@ -9,5 +9,5 @@ Very Small Linux Distro 13.4MB
 
 **Run on [QEMU](https://www.qemu.org):**
 ```
-.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio
+.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio -smp 1 -m 512
 ```
