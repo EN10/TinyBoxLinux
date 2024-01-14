@@ -17,7 +17,7 @@ make -j 8
 make CONFIG_PREFIX=~/initramfs install
 # make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8 CONFIG_PREFIX=~/initramfs install
 cd ~/initramfs
-printf "#\!/bin/sh\n\n/bin/sh\n" > init
+echo -e '#!/bin/sh\n\n/bin/sh' > init
 nano init
 # see init file
 rm linuxrc
