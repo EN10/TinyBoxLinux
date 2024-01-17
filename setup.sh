@@ -23,6 +23,8 @@ nano init
 rm linuxrc
 chmod +x init
 find . | cpio -o -H newc > ../init.cpio
+cat ../init.cpio | gzip -9 > ../init.cpio.gz
+
 
 # bootloader
 cd ..
