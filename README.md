@@ -1,6 +1,6 @@
 # BusyBox Linux
 
-Very Small Linux Distro 13.4MB
+Very Small Linux Distro 2.87MB
 
 * Based on: [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg)
 * Based on: [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
