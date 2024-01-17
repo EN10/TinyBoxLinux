@@ -3,14 +3,15 @@
 Very Small Linux Distro 13.4MB
 
 * Based on: [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg)
+* Based on: [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
 
-* [Linux Kernel](https://www.kernel.org) 6.7.0: `bzImage` 12.3MB
-* [BusyBox](https://busybox.net) 1.36.1: `init.cpio` 2.64MB
+* [Linux Kernel](https://www.kernel.org) 6.7.0: `bzImage` 1.49MB
+* [BusyBox](https://busybox.net) 1.36.1: `init.cpio.gz` 1.38MB
 
 **Run on [QEMU](https://www.qemu.org):**
 ```
-.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio
+.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz
 ```
 ```
-.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio-smp 1 -m 512 -append "init=/bin/sh"
+.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz -smp 1 -m 512
 ```
