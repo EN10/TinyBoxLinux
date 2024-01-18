@@ -7,4 +7,4 @@ make menuconfig
 * **G**eneral setup - **C**onfigure stamdard kernel features - **E**nable support for printk  
 * **G**eneral setup - **I**nitial RAM filesystem and RAM disk - **S**upport initial ramdisk/ramfs compressed using gzip  
 * **E**xecutable file formats -  **K**ernel support for ELF binaries
-* * **E**xecutable file formats -  **K**ernel support for scripts starting with #!
+* **E**xecutable file formats -  **K**ernel support for scripts starting with #!
