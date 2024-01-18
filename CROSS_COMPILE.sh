@@ -11,7 +11,9 @@ cd linux
 
 apt update
 apt install git make gcc gcc-x86-64-linux-gnu libncurses-dev flex bison
-make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig
+# make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig
+make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- defconfig
+# make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- tinyconfig
 
 apt install bc libelf-dev libssl-dev
 make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8
