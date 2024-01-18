@@ -6,6 +6,7 @@ docker run --privileged -it ubuntu
 # kernel
 git clone --depth 1 https://github.com/torvalds/linux.git
 # git clone --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git -b linux-6.6.y
+# git pull --depth 1
 cd linux
 
 apt update
