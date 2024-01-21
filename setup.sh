@@ -1,12 +1,15 @@
+# setup docker
+curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+sudo usermod -aG docker $USER
 docker run --privileged -it ubuntu
 sudo apt install bzip2 git nano make gcc libncurses-dev flex bison bc cpio libelf-dev libssl-dev syslinux dosfstools
 
 # Linux Kernel: bzImage
 git clone --depth 1 https://github.com/torvalds/linux.git
 cd linux
-make menuconfig
+make defconfig
 make -j 8
-cp arch/x86_64/boot/bzImage ~/
+docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 
 # userspace busybox
 git clone --depth 1 https://git.busybox.net/busybox
@@ -18,15 +21,12 @@ make CONFIG_PREFIX=../initramfs install
 # make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8 CONFIG_PREFIX=~/initramfs install
 cd ../initramfs
 echo -e '#!/bin/sh\n\n/bin/sh' > init
-nano init
-# see init file
-rm linuxrc
 chmod +x init
+rm linuxrc
 find . | cpio -o -H newc > ../init.cpio
 cat ../init.cpio | gzip -9 > ../init.cpio.gz
 
-
-# bootloader
+# bootloader not needed in QEMU
 cd ..
 sudo apt install syslinux
 dd if=/dev/zero of=boot bs=1M count=20
