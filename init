@@ -9,8 +9,9 @@ mount -t proc none /proc
 mount -t sysfs none /sys
 mount -t tmpfs none /tmp
 
-# Networking
-/etc/ethernet.sh
+# Setup networking
+ip link set eth0 up
+udhcpc -b -i eth0 -s /etc/network.sh
 
-# Shell
+# Start shell
 /bin/sh
