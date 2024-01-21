@@ -22,6 +22,6 @@ make menuconfig
 *  `initial ramdisk gzip` enables init.cpio.gz
 *  `ELF` enables /bin/sh
 *  `#! scripts` enables init with /bin/sh
-*  `sysfs & PCI & Intel PRO/1000` enables eth0
+*  `sysfs & PCI & Intel PRO/1000` enables eth0 (e1000 is default QEMU network device)
 *  `Packet & TCP/IP` enables networking software
 *  `/proc` enables ps 
