@@ -7,7 +7,7 @@ make menuconfig
 * <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure stamdard kernel features - <ins>**E**</ins>nable support for printk  
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for ELF binaries
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for scripts starting with #!
-* N<ins>**e**</ins>tworking support - **T**CP/IP networking   
+* N<ins>**e**</ins>tworking support - N**e**tworking options - **T**CP/IP networking   
 * <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY  
 * <ins>**D**</ins>evice Drivers - <ins>**P**</ins>CI support
 * <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>tworke device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices  
