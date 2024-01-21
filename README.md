@@ -18,4 +18,5 @@ Very Small Linux Distro 9.36MB
 ```
 ### Setup
 * [Build Simple Kernel & Busybox](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)
-* [Build with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh)
+* [BusyBox Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh)
+* [Tiny Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)
