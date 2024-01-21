@@ -10,6 +10,6 @@ make menuconfig
 * N<ins>**e**</ins>tworking support - N**e**tworking options - **T**CP/IP networking   
 * <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY  
 * <ins>**D**</ins>evice Drivers - <ins>**P**</ins>CI support
-* <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>twork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices  
+* <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>twork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices - **I**ntel(R) PRO/1000 Gigabit Ethernet support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - /proc file system support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - sysfs file system support  
