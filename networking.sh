@@ -26,7 +26,7 @@ wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/network.sh
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/protocols
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/services
 echo 'nameserver 8.8.8.8' > resolv.conf
-chmod +x ethernet.sh network.sh 
+chmod +x network.sh 
 
 cd ../initramfs
 # /init & /sbin/ethernet based on https://github.com/maksimKorzh/msmd-linux/releases/download/0.1/root.zip
