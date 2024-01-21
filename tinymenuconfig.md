@@ -16,3 +16,12 @@ make menuconfig
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - sysfs file system support  
 
 [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
+
+* `TTY` enables Console
+* `printk` enables kernel output on boot
+*  `initial ramdisk gzip` enables init.cpio.gz
+*  `ELF` enables /bin/sh
+*  `#! scripts` enables init /bin/sh
+*  `sysfs & PCI & Intel PRO/1000` enables eth0
+*  `Packet & TCP/IP` enables networking software
+*  `/proc` enables ps 
