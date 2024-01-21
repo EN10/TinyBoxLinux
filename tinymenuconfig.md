@@ -21,7 +21,7 @@ make menuconfig
 * `printk` enables kernel output on boot
 *  `initial ramdisk gzip` enables init.cpio.gz
 *  `ELF` enables /bin/sh
-*  `#! scripts` enables init /bin/sh
+*  `#! scripts` enables init with /bin/sh
 *  `sysfs & PCI & Intel PRO/1000` enables eth0
 *  `Packet & TCP/IP` enables networking software
 *  `/proc` enables ps 
