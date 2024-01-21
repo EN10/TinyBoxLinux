@@ -13,3 +13,5 @@ make menuconfig
 * <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>twork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices - **I**ntel(R) PRO/1000 Gigabit Ethernet support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - /proc file system support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - sysfs file system support  
+
+[Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
