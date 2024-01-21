@@ -8,4 +8,4 @@ make menuconfig
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for ELF binaries
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for scripts starting with #!
 * <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY
-* <ins>**D**</ins>evice Drivers - <ins>**N**</ins>etwork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices
+* <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>tworke device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices
