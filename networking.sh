@@ -14,7 +14,8 @@ apt download $(cat deps.txt)
 
 mkdir -p ../initramfs//var/lib/dpkg/updates ../initramfs//var/lib/dpkg/info  && touch ../initramfs//var/lib/dpkg/status
 sudo dpkg --root ../initramfs/ -i * 
-sudo dpkg --root ../init/ --configure -a 
+# debug dpkg
+# sudo dpkg --root ../init/ --configure -a 
 
 # setup /etc
 cd ../initramfs
