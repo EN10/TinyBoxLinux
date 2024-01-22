@@ -1,6 +1,7 @@
 ```
 ps
 sudo strace -ff -p 12345 -o trace
+ping -c1 google.com
 wget example.com
 cat trace.12346 | grep openat | grep -v ENOENT | awk '{print $2}'
 
