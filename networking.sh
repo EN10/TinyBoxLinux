@@ -41,17 +41,6 @@ wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/bootfiles/init
 chmod +x init
 rm linuxrc
 
-# test & debug tools
-# cd ./initramfs
-# sudo chroot . /bin/sh
-# ping -c1 google.com
-# wget example.com
-# strace lib dependencies
-# mkdir proc && mount -t proc none /proc
-# ps
-# sudo strace -ff -p 44192 -o trace
-# cat trace.22731 | grep openat
-
 # create init.cpio.gz
 cd ../initramfs
 find . | cpio -o -H newc > ../init.cpio
