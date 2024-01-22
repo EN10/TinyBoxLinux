@@ -9,7 +9,6 @@ make menuconfig
 make -j 8
 make CONFIG_PREFIX=../initramfs install
 
-
 # libnss_dns files for networking
 # https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.md
 cd ../initramfs
