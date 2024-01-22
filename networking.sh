@@ -7,7 +7,7 @@ make menuconfig
 make -j 8
 make CONFIG_PREFIX=../initramfs install
 
-# install libc - needed for networking
+# install libc for libnss_dns - needed for networking
 mkdir ../pkg
 apt-rdepends libc6 | awk '{ print $1 }' | sort | uniq | tr '\n' ' ' | cut -d" "  -f3- > deps.txt
 apt download $(cat deps.txt)
