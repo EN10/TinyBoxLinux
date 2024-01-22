@@ -1,0 +1,1 @@
+libc6 libcrypt1 libgcc-s1 
