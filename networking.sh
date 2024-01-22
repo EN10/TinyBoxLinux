@@ -11,6 +11,7 @@ make CONFIG_PREFIX=../initramfs install
 
 
 # libnss_dns files for networking
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.md
 cd ../initramfs
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/lib.tar.gz
 tar -xvzf lib.tar.gz
