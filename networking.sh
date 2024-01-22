@@ -42,6 +42,9 @@ rm linuxrc
 # sudo chroot . /bin/sh
 # ping -c1 google.com
 # wget example.com
+# mkdir proc && mount -t proc none /proc
+# ps
+# sudo strace -ff -p 44192 -o trace
 
 # create init.cpio.gz
 sudo su
