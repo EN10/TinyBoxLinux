@@ -45,6 +45,7 @@ rm linuxrc
 # mkdir proc && mount -t proc none /proc
 # ps
 # sudo strace -ff -p 44192 -o trace
+# cat trace.22731 | grep openat
 
 # create init.cpio.gz
 sudo su
