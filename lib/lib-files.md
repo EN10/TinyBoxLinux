@@ -1,4 +1,6 @@
 ```
+cd initramfs
+sudo chroot . /bin/sh
 ps
 sudo strace -ff -p 12345 -o trace
 ping -c1 google.com
