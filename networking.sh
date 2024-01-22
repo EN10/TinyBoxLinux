@@ -11,6 +11,7 @@ make CONFIG_PREFIX=../initramfs install
 
 # install libc for libnss_dns - needed for networking
 mkdir ../pkg
+sudo apt install apt-rdepends
 apt-rdepends libc6 | awk '{ print $1 }' | sort | uniq | tr '\n' ' ' | cut -d" "  -f3- > deps.txt
 apt download $(cat deps.txt)
 
