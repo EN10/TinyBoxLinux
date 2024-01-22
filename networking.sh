@@ -1,4 +1,6 @@
 # create busybox initramfs
+sudo apt update
+sudo apt install git make gcc ncurses-dev bzip2
 git clone --depth 1 https://git.busybox.net/busybox
 cd busybox
 # git pull --depth 1
