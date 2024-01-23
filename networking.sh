@@ -27,7 +27,7 @@ sudo dpkg --root ../initramfs/ -i *
 # sudo dpkg --root ../init/ --configure -a 
 
 # setup /etc
-cd ../initramfs
+cd ../../initramfs
 mkdir etc && cd etc
 # /etc/network.sh from https://github.com/maksimKorzh/msmd-linux/releases/download/0.1/root.zip
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/network.sh
