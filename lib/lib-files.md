@@ -1,6 +1,8 @@
 ```
 cd initramfs
 sudo chroot . /bin/sh
+# mkdir proc
+# mount -t proc none /proc
 ps
 sudo strace -ff -p 12345 -o trace
 ping -c1 google.com
