@@ -20,7 +20,7 @@ docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - /proc file system support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - sysfs file system support  
 
-[Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
+Based on [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
 
 * `TTY` enables Console
 * `printk` enables kernel output on boot
