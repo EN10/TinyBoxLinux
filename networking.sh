@@ -15,7 +15,7 @@ cd ../initramfs
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/lib.tar.gz
 tar -xvzf lib.tar.gz
 rm lib.tar.gz
-# use apt instead of wget lib.tar.gz
+# OR use apt instead of wget lib.tar.gz
 mkdir ../pkg
 cd ../pkg
 sudo apt install apt-rdepends
