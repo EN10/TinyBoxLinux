@@ -36,4 +36,4 @@ Specify cores `-smp` and memory `-m`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)    
 `tinyconfig bzImage 2.63MB`
 ### Create iso
-* [SYSLINUX ISOLINUX](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/isolinux.md)
+* [isolinux](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/isolinux.md)
