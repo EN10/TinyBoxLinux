@@ -3,6 +3,7 @@
 ```
 mkdir -p cd-root/isolinux
 cd cd-root/isolinux
+# https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX
 wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/isolinux.bin
 wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/ldlinux.c32
 cd ..
