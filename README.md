@@ -19,6 +19,7 @@ The BusyBox Linux Distro has 2 main files in `bootfiles`:
 ```
 .\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz
 ```
+Specify cores `-smp` and memory `-m`
 ```
 .\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz -smp 1 -m 512
 ```
