@@ -44,5 +44,4 @@ rm linuxrc
 
 # create init.cpio.gz
 cd ../initramfs
-find . | cpio -o -H newc > ../init.cpio
-cat ../init.cpio | gzip -9 > ../init.cpio.gz
+find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
