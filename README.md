@@ -24,7 +24,8 @@ Specify cores `-smp` and memory `-m`
 .\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz -smp 1 -m 512
 ```
 ### Simple Distro Setup
-* [Build defconfig Kernel & Busybox](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)
+* [Build defconfig Kernel & Busybox](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)  
+`defconfig bzImage 12.8MB`
 ### Add Networking:
 * [BusyBox Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh)
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)
