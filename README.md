@@ -6,6 +6,8 @@ Tiny Linux Distro 5.18MB
 * Based on: [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d) - [menuconfig](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md) - [tiny.config](https://github.com/EN10/BusyBoxLinux/blob/main/tiny.config)
 * Based on: [Networking from MSMD Linux](https://github.com/maksimKorzh/msmd-linux/releases/tag/0.1) - [networking.sh](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh)
 
+The BusyBox Linux Distro has 2 main files: [Linux Kernel](https://www.kernel.org) `bzImage` and [BusyBox](https://busybox.net) User space utilities `init.cpio.gz`.
+
 * [Linux Kernel](https://www.kernel.org) 6.7.0: `bzImage` 2.63MB (tiny + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` 2.55MB (with networking)
 
