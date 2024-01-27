@@ -9,6 +9,7 @@ wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/ldlinux.c32
 cd ..
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/cd-root/isolinux.cfg
 cp ../linux/arch/x86/boot/bzImage .
+# rename as init.cpio.gz becomes init.cpi.gz on iso
 cp ../init.cpio.gz ./init.gz
 sudo apt install mkisofs
 ```
