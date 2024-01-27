@@ -16,6 +16,11 @@ The BusyBox Linux Distro has 2 main files in `bootfiles`:
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` 2.55MB (with networking)
 
 ### Run on [QEMU](https://www.qemu.org):
+from `BusyBoxLinux.iso`
+```
+.\qemu-system-x86_64.exe -cdrom BusyBoxLinux.iso
+```
+from `bzImage` and `init.cpio.gz`
 ```
 .\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz
 ```
