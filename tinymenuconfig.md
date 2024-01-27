@@ -1,6 +1,11 @@
 ```
+# Linux Kernel: bzImage
+git clone --depth 1 https://github.com/torvalds/linux.git
+cd linux
 make tinyconfig
 make menuconfig
+make -j 8
+docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 ```
  
 * <ins>**G**</ins>eneral setup - <ins>**I**</ins>nitial RAM filesystem and RAM disk - <ins>**S**</ins>upport initial ramdisk/ramfs compressed using gzip
