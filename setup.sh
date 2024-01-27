@@ -23,8 +23,7 @@ cd ../initramfs
 echo -e '#!/bin/sh\n\n/bin/sh' > init
 chmod +x init
 rm linuxrc
-find . | cpio -o -H newc > ../init.cpio
-cat ../init.cpio | gzip -9 > ../init.cpio.gz
+find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
 
 # bootloader not needed in QEMU
 cd ..
