@@ -26,7 +26,7 @@ from `bzImage` and `init.cpio.gz`
 ```
 Specify cores `-smp` and memory `-m`
 ```
-.\qemu-system-x86_64.exe -kernel bzImage -initrd init.cpio.gz -smp 1 -m 512
+.\qemu-system-x86_64.exe -cdrom BusyBoxLinux.iso -smp 1 -m 512
 ```
 ### Simple Distro Setup
 * [Build defconfig Kernel & Busybox](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)    
