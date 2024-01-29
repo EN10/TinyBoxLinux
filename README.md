@@ -1,6 +1,6 @@
 # BusyBox Linux
 
-Tiny Linux Distro 5.18MB
+Tiny Linux Distro from 5.18MB
 
 ### Based on:
 
