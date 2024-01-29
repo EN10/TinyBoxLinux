@@ -25,7 +25,7 @@ chmod +x init
 rm linuxrc
 find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
 
-# bootloader not needed in QEMU
+# OPTIONAL step: bootloader (not needed in QEMU)
 cd ..
 sudo apt install syslinux
 dd if=/dev/zero of=boot bs=1M count=20
