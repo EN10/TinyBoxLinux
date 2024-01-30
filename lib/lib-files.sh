@@ -1,4 +1,3 @@
-```
 cd initramfs
 sudo chroot . /bin/sh
 # mkdir proc
@@ -31,4 +30,4 @@ libnss_dns.so.2
 libnss_files.so.2 -> libnss_files-2.31.so
 libnss_nis.so.2 -> libnss_nis-2.31.so
 libresolv.so.2
-```
+
