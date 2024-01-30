@@ -6,6 +6,7 @@ cd busybox
 # git pull --depth 1
 make menuconfig
 # Settings - Build static binary
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/BusyBox-static.sh
 make -j 8
 make CONFIG_PREFIX=../initramfs install
 
