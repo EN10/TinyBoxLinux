@@ -33,7 +33,7 @@ Specify cores `-smp` and memory `-m`
 * [Build defconfig Kernel & Busybox](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)    
 `defconfig bzImage 12.8MB`
 ### Add Networking:
-* [BusyBox Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh) - [Identify /lib dependencies](https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh)    
+* [Build BusyBox with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh) - [Identify /lib dependencies](https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh)    
 `BusyBox init.cpio.gz 2.55MB`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)    
 `tinyconfig bzImage 2.63MB`
