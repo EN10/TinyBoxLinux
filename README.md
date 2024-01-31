@@ -37,6 +37,6 @@ Specify cores `-smp` and memory `-m`
 `BusyBox init.cpio.gz 2.55MB`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)    
 `tinyconfig bzImage 2.63MB`
-### Create iso
+### Create bootable CD iso
 * [isolinux setup](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/isolinux.sh) - [BusyboxLinux.iso](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)    
 `BusyBoxLinux.iso 5.69 MB`
