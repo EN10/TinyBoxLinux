@@ -2,8 +2,8 @@
 sudo apt update
 sudo apt install git make gcc ncurses-dev bzip2
 git clone --depth 1 https://git.busybox.net/busybox
-cd busybox
 # git pull --depth 1
+cd busybox
 make menuconfig
 # Settings - Build static binary
 # https://github.com/EN10/BusyBoxLinux/blob/main/lib/BusyBox-static.sh
