@@ -6,7 +6,7 @@ Tiny BusyBox Linux Distro from 5.18MB
 
 * [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg) - [setup.sh](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)
 * [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d) - [menuconfig](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md) - [tiny.config](https://github.com/EN10/BusyBoxLinux/blob/main/tiny.config)
-* [Networking from MSMD Linux](https://github.com/maksimKorzh/msmd-linux/releases/tag/0.1) - [networking.sh](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh)
+* [Networking from MSMD Linux](https://github.com/maksimKorzh/msmd-linux/releases/tag/0.1) - [networking.sh](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh) - [find /lib deps](https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh)    
 * [Make a Bootable CD With ISOLINUX](https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX) - [isolinux.sh](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/isolinux.sh)
 
 ### Distro Files:
