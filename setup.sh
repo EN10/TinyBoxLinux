@@ -17,7 +17,7 @@ git clone --depth 1 https://git.busybox.net/busybox
 cd busybox
 make menuconfig
 # Settings - Build static binary
-# https://github.com/EN10/BusyBoxLinux/blob/main/lib/BusyBox-static.sh
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/busybox-static.sh
 make -j 8
 make CONFIG_PREFIX=../initramfs install
 cd ../initramfs
