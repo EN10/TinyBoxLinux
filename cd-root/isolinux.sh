@@ -1,12 +1,11 @@
 # BusyBox Linux iso
 
-mkdir -p cd-root/isolinux
-cd cd-root/isolinux
 # https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX
-wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/isolinux.bin
-wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/ldlinux.c32
-cd ..
-wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/cd-root/isolinux.cfg
+wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/cd-root.tar.gz
+tar -xvzf cd-root.tar.gz
+rm cd-root.tar.gz
+
+cd cd-root
 cp ../linux/arch/x86/boot/bzImage .
 # rename as init.cpio.gz becomes init.cpi.gz on iso
 cp ../init.cpio.gz ./init.gz
