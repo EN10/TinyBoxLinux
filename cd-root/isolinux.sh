@@ -1,6 +1,7 @@
 # BusyBox Linux iso
 
 # https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX
+# cd-root.tar.gz: isolinux/isolinux.bin isolinux/ldlinux.c32 isolinux.cfg
 wget https://github.com/EN10/BusyBoxLinux/raw/main/cd-root/cd-root.tar.gz
 tar -xvzf cd-root.tar.gz
 rm cd-root.tar.gz
