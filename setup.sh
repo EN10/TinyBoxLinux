@@ -25,15 +25,3 @@ echo -e '#!/bin/sh\n\n/bin/sh' > init
 chmod +x init
 rm linuxrc
 find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
-
-# OPTIONAL step: bootloader (not needed in QEMU)
-cd ..
-sudo apt install syslinux
-dd if=/dev/zero of=boot bs=1M count=20
-sudo apt install dosfstools
-mkfs -t fat boot
-syslinux boot
-mkdir m
-sudo mount boot m
-sudo cp bzImage init.cpio m
-sudo umount m
