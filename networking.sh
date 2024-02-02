@@ -30,9 +30,6 @@ sudo dpkg --root ../initramfs/ -i *
 # setup /etc
 cd ../../initramfs
 mkdir etc && cd etc
-# /etc/network.sh from https://github.com/maksimKorzh/msmd-linux/releases/download/0.1/root.zip
-wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/network.sh
-chmod +x network.sh 
 # services from https://www.linuxfromscratch.org/lfs/view/stable/chapter08/iana-etc.html
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/services
 echo 'nameserver 8.8.8.8' > resolv.conf
