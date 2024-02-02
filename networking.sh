@@ -27,7 +27,7 @@ wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/services
 echo 'nameserver 8.8.8.8' > resolv.conf
 
 cd ../initramfs
-# /init & /sbin/ethernet based on https://github.com/maksimKorzh/msmd-linux/releases/download/0.1/root.zip
+# /init based on https://wiki.gentoo.org/wiki/Custom_Initramfs#Init
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/bootfiles/init
 chmod +x init
 rm linuxrc
