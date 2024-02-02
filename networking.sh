@@ -6,7 +6,7 @@ git clone --depth 1 https://git.busybox.net/busybox
 cd busybox
 make menuconfig
 # Settings - Build static binary
-# https://github.com/EN10/BusyBoxLinux/blob/main/lib/BusyBox-static.sh
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/busybox-static.sh
 make -j 8
 make CONFIG_PREFIX=../initramfs install
 
@@ -16,7 +16,7 @@ cd ../initramfs
 lib=lib/x86_64-linux-gnu/
 mkdir -p ${lib}
 cp /${lib}libnss_{dns,files}.so.2 /${lib}{libresolv,ld-linux-x86-64}.so.2 /${lib}libc.so.6 ${lib}
-# strace: https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh
+# strace: https://github.com/EN10/BusyBoxLinux/blob/main/lib/strace-wget.sh
 # OR use APT: https://github.com/EN10/BusyBoxLinux/blob/main/lib/libc6-apt-dns.sh
 
 # setup /etc
