@@ -7,3 +7,8 @@ mkdir -p ../initramfs//var/lib/dpkg/updates ../initramfs//var/lib/dpkg/info && t
 sudo dpkg --root ../initramfs/ -i * 
 # debug dpkg
 # sudo dpkg --root ../init/ --configure -a 
+
+
+# deps.txt :
+# libc6 libcrypt1 libgcc-s1 
+# https://packages.ubuntu.com/focal/libc6
