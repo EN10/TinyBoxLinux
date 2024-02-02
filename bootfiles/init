@@ -9,9 +9,10 @@ mount -t proc none /proc
 mount -t sysfs none /sys
 mount -t tmpfs none /tmp
 
-# Setup networking
-ip link set eth0 up
-udhcpc -b -i eth0 -s /etc/network.sh
+# Setup Static IP
+# https://wiki.gentoo.org/wiki/Custom_Initramfs#Static_IP
+ifconfig eth0 10.0.2.15
+route add default gw 10.0.2.2
 
 # Start shell
 /bin/sh
