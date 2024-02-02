@@ -17,8 +17,7 @@ wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/lib.tar.gz
 tar -xvzf lib.tar.gz
 rm lib.tar.gz
 # OR use apt instead of wget lib.tar.gz
-mkdir ../pkg
-cd ../pkg
+mkdir ../pkg && cd ../pkg
 sudo apt install apt-rdepends
 apt-rdepends libc6 | awk '{ print $1 }' | sort | uniq | tr '\n' ' ' | cut -d " " -f3- > deps.txt
 apt download $(cat deps.txt)
