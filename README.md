@@ -34,9 +34,9 @@ Specify cores `-smp` and memory `-m`
 `defconfig bzImage 12.8MB`
 ### Add Networking:
 * [Build BusyBox with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh) - [Identify /lib dependencies](https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh)    
-`BusyBox init.cpio.gz 2.55MB`
+`BusyBox init.cpio.gz 2.49MB`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)    
 `tinyconfig bzImage 2.63MB`
 ### Create bootable CD iso
 * [isolinux setup](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/isolinux.sh) - [BusyboxLinux.iso](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)    
-`BusyBoxLinux.iso 5.69 MB`
+`BusyBoxLinux.iso 5.62 MB`
