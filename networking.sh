@@ -10,18 +10,17 @@ make menuconfig
 make -j 8
 make CONFIG_PREFIX=../initramfs install
 
-# glibc libraries for DNS
+# copy glibc libraries for DNS from host machine
 # https://wiki.gentoo.org/wiki/Custom_Initramfs#DNS
-# https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh
 cd ../initramfs
-# copy DNS libraries from host
 lib=lib/x86_64-linux-gnu/
 mkdir -p ${lib}
 cp /${lib}libnss_{dns,files}.so.2 /${lib}{libresolv,ld-linux-x86-64}.so.2 /${lib}libc.so.6 ${lib}
+# strace: https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh
 # OR use APT: https://github.com/EN10/BusyBoxLinux/blob/main/lib/libc6-apt-dns.sh
 
 # setup /etc
-cd ../../initramfs
+cd ../initramfs
 mkdir etc && cd etc
 # services from https://www.linuxfromscratch.org/lfs/view/stable/chapter08/iana-etc.html
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/services
