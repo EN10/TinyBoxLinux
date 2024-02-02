@@ -15,8 +15,9 @@ make CONFIG_PREFIX=../initramfs install
 # https://github.com/EN10/BusyBoxLinux/blob/main/lib/lib-files.sh
 cd ../initramfs
 # copy DNS libraries from host
-mkdir -p lib/x86_64-linux-gnu
-cp /lib/x86_64-linux-gnu/libnss_{dns,files}.so.2 /lib/x86_64-linux-gnu/{libresolv,ld-linux-x86-64}.so.2 /lib/x86_64-linux-gnu/libc.so.6 lib/x86_64-linux-gnu
+lib=lib/x86_64-linux-gnu/
+mkdir -p ${lib}
+cp /${lib}libnss_{dns,files}.so.2 /${lib}{libresolv,ld-linux-x86-64}.so.2 /${lib}libc.so.6 ${lib}
 # OR use APT: https://github.com/EN10/BusyBoxLinux/blob/main/lib/libc6-apt-dns.sh
 
 # setup /etc
