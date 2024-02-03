@@ -21,10 +21,8 @@ cp /${lib}libnss_{dns,files}.so.2 /${lib}{libresolv,ld-linux-x86-64}.so.2 /${lib
 
 # setup /etc
 cd ../initramfs
-mkdir etc && cd etc
-# services from https://www.linuxfromscratch.org/lfs/view/stable/chapter08/iana-etc.html
-wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/etc/services
-echo 'nameserver 8.8.8.8' > resolv.conf
+mkdir etc
+echo 'nameserver 8.8.8.8' > etc/resolv.conf
 
 cd ../initramfs
 # /init based on https://wiki.gentoo.org/wiki/Custom_Initramfs#Init
