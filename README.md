@@ -13,7 +13,7 @@ Tiny BusyBox Linux Distro from 4.99 MB
 
 The BusyBox Linux Distro has 2 main files in `bootfiles`:
 
-* [Linux Kernel](https://www.kernel.org) 6.7.0: `bzImage` [2.63 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
+* [Linux Kernel](https://www.kernel.org) 6.7.2: `bzImage` [2.63 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.36 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
 
 ### Run on [QEMU](https://www.qemu.org):
