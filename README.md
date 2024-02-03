@@ -1,6 +1,6 @@
 # BusyBox Linux
 
-Tiny BusyBox Linux Distro from 5.12MB
+Tiny BusyBox Linux Distro from 4.99 MB
 
 ### Based on:
 
@@ -13,8 +13,8 @@ Tiny BusyBox Linux Distro from 5.12MB
 
 The BusyBox Linux Distro has 2 main files in `bootfiles`:
 
-* [Linux Kernel](https://www.kernel.org) 6.7.0: `bzImage` [2.63MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
-* [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.49MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
+* [Linux Kernel](https://www.kernel.org) 6.7.0: `bzImage` [2.63 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
+* [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.36 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
 
 ### Run on [QEMU](https://www.qemu.org):
 from `BusyBoxLinux.iso`
@@ -34,9 +34,9 @@ Specify cores `-smp` and memory `-m`
 `defconfig bzImage 12.8MB`
 ### Add Networking:
 * [Build BusyBox with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/networking.sh) - [Identify /lib dependencies](https://github.com/EN10/BusyBoxLinux/blob/main/lib/strace-wget.sh)    
-`BusyBox init.cpio.gz 2.49MB`
+`BusyBox init.cpio.gz 2.36 MB`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/BusyBoxLinux/blob/main/tinymenuconfig.md)    
-`tinyconfig bzImage 2.63MB`
+`tinyconfig bzImage 2.63 MB`
 ### Create bootable CD iso
 * [isolinux setup](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/isolinux.sh) - [BusyboxLinux.iso](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)    
-`BusyBoxLinux.iso 5.62 MB`
+`BusyBoxLinux.iso 5.49 MB`
