@@ -13,7 +13,7 @@ ifconfig eth0 10.0.2.15
 route add default gw 10.0.2.2
 
 # Shell
-# /bin/sh: can't access tty; job control turned off
+# https://wiki.gentoo.org/wiki/Custom_Initramfs#Job_control
+# https://unix.stackexchange.com/a/759874
 ln -s /dev/console /dev/tty
 setsid cttyhack sh
-/bin/sh
