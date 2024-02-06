@@ -14,12 +14,11 @@ cd linux
 
 apt update
 apt install git make gcc gcc-x86-64-linux-gnu libncurses-dev flex bison
-# make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig
-make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- defconfig
-# make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- tinyconfig
+# make menuconfig
+make defconfig
+# make tinyconfig
 
 apt install bc libelf-dev libssl-dev
-make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8
 # yes "" | make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 8
 
 docker cp a123b456:/root/linux/arch/x86/boot/bzImage ./
