@@ -12,8 +12,8 @@ docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 * <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure stamdard kernel features - <ins>**E**</ins>nable support for printk  
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for ELF binaries
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for scripts starting with #!
-* N<ins>**e**</ins>tworking support - N<ins>**e**</ins>tworking options - <ins>**P**</ins>acket socket
 * N<ins>**e**</ins>tworking support - N<ins>**e**</ins>tworking options - <ins>**T**</ins>CP/IP networking
+* <ins>**D**</ins>evice Drivers - <ins>**G**</ins>neric Driver Options - M**a**intain a devtmpfs filesystem to mount at /dev - **A**utomount devtmpfs at /dev, after the kernel mounted the rootfs
 * <ins>**D**</ins>evice Drivers - <ins>**P**</ins>CI support 
 * <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY  
 * <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>twork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices - **I**ntel(R) PRO/1000 Gigabit Ethernet support  
