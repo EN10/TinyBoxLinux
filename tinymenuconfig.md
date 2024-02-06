@@ -12,9 +12,10 @@ docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 * <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure stamdard kernel features - <ins>**E**</ins>nable support for printk  
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for ELF binaries
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for scripts starting with #!
+* N<ins>**e**</ins>tworking support - N<ins>**e**</ins>tworking options - <ins>**U**</ins>nix domain sockets 
 * N<ins>**e**</ins>tworking support - N<ins>**e**</ins>tworking options - <ins>**T**</ins>CP/IP networking
-* <ins>**D**</ins>evice Drivers - <ins>**G**</ins>neric Driver Options - M**a**intain a devtmpfs filesystem to mount at /dev - **A**utomount devtmpfs at /dev, after the kernel mounted the rootfs
 * <ins>**D**</ins>evice Drivers - <ins>**P**</ins>CI support 
+* <ins>**D**</ins>evice Drivers - <ins>**G**</ins>enric Driver Options - M**a**intain a devtmpfs filesystem to mount at /dev - **A**utomount devtmpfs at /dev, after the kernel mounted the rootfs
 * <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY  
 * <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>twork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices - **I**ntel(R) PRO/1000 Gigabit Ethernet support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - /proc file system support  
@@ -29,5 +30,5 @@ Based on [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-lin
 *  `#! scripts` enables init with /bin/sh
 *  `Intel PRO/1000 & PCI` drivers for e1000 (default QEMU network device) through the PCI bus
 *  `sysfs` makes eth0 visable in /sys
-*  `Packet & TCP/IP` enables networking software
+*  `Unix Socket & TCP/IP` enables networking software
 *  `/proc` enables ps 
