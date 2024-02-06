@@ -10,6 +10,9 @@ cd cd-root
 cp ../linux/arch/x86/boot/bzImage .
 # rename as init.cpio.gz becomes init.cpi.gz on iso
 cp ../init.cpio.gz ./init.gz
+# OR use wget
+wget https://github.com/EN10/BusyBoxLinux/raw/main/bootfiles/bzImage
+wget https://github.com/EN10/BusyBoxLinux/raw/main/bootfiles/init.cpio.gz -O init.gz
 
 sudo apt install mkisofs
 mkisofs -o BusyBoxLinux.iso \
