@@ -7,7 +7,7 @@ dmesg -n 1
 mkdir proc sys dev
 mount -t proc none /proc      # ps
 mount -t sysfs none /sys      # sys/class/net/eth0
-mount -t devtmpfs none /dev   # dev/urandom 
+mount -t devtmpfs none /dev   # dev/urandom (https)
 
 # Setup Static IP
 ifconfig eth0 10.0.2.15
