@@ -20,11 +20,9 @@ cp /${lib}{libnss_dns,libresolv,ld-linux-x86-64}.so.2 /${lib}libc.so.6 ${lib}
 # OR use APT: https://github.com/EN10/BusyBoxLinux/blob/main/lib/wget/libc6-apt-dns.sh
 
 # setup /etc
-cd ../initramfs
 mkdir etc
 echo 'nameserver 8.8.8.8' > etc/resolv.conf
 
-cd ../initramfs
 # /init based on https://wiki.gentoo.org/wiki/Custom_Initramfs#Init
 wget https://raw.githubusercontent.com/EN10/BusyBoxLinux/main/bootfiles/init
 chmod +x init
@@ -32,5 +30,4 @@ rm linuxrc
 
 # create init.cpio.gz
 sudo apt install cpio
-cd ../initramfs
 find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
