@@ -16,8 +16,8 @@ cd ../initramfs
 lib=lib/x86_64-linux-gnu/
 mkdir -p ${lib}
 cp /${lib}{libnss_dns,libresolv,ld-linux-x86-64}.so.2 /${lib}libc.so.6 ${lib}
-# strace: https://github.com/EN10/BusyBoxLinux/blob/main/lib/strace-wget.sh
-# OR use APT: https://github.com/EN10/BusyBoxLinux/blob/main/lib/libc6-apt-dns.sh
+# strace: https://github.com/EN10/BusyBoxLinux/blob/main/lib/wget/strace-wget.sh
+# OR use APT: https://github.com/EN10/BusyBoxLinux/blob/main/lib/wget/libc6-apt-dns.sh
 
 # setup /etc
 cd ../initramfs
