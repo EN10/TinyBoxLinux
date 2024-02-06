@@ -31,5 +31,6 @@ chmod +x init
 rm linuxrc
 
 # create init.cpio.gz
+sudo apt install cpio
 cd ../initramfs
 find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
