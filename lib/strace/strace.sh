@@ -22,5 +22,5 @@ ldd /usr/bin/strace | awk '{print $3}'
 /lib/x86_64-linux-gnu/libunwind.so.8
 
 sudo cp /usr/bin/strace usr/bin
-ldd /usr/bin/elinks | awk '{print $3}' > libs.txt
+ldd /usr/bin/strace | awk '{print $3}' > libs.txt
 xargs -a libs.txt cp -t lib/x86_64-linux-gnu
