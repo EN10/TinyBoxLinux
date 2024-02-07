@@ -9,5 +9,5 @@ tar -czvf elink.tar.gz lib/ elinks
 
 # install
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
-tar -xvzf cd-root.tar.gz
+tar -xvzf elinks.tar.gz
 mv elinks /usr/bin/elinks
