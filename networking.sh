@@ -31,3 +31,8 @@ rm linuxrc
 # create init.cpio.gz
 sudo apt install cpio
 find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
+
+# networking on QEMU
+.\qemu-system-x86_64.exe -cdrom .\BusyBoxLinux.iso -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::789-:789
+echo testing > index.html
+httpd -h / -p 789
