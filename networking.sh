@@ -32,7 +32,7 @@ rm linuxrc
 sudo apt install cpio
 find . | cpio -o -H newc | gzip -9 > ../init.cpio.gz
 
-# networking on QEMU
+# QEMU: access httpd guest from host
 .\qemu-system-x86_64.exe -cdrom .\BusyBoxLinux.iso -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::789-:789
 echo testing > index.html
 httpd -h / -p 789
