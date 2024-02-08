@@ -44,7 +44,7 @@ cp /lib/libfsplib.so.0 lib
 cp /usr/bin/elinks usr/bin/elinks
 mkdir -p lib/terminfo/x/
 cp /lib/terminfo/x/xterm-256color lib/terminfo/x/xterm-256color
-tar -czvf elink.tar.gz lib/ usr/bin/elinks lib/terminfo/x/xterm-256color
+tar -czvf elinks.tar.gz lib/ usr/bin/elinks lib/terminfo/x/xterm-256color
 
 # install
 mkdir /root
