@@ -53,3 +53,4 @@ tar -czvf elinks.tar.gz lib/ lib64/ usr/bin/elinks lib/terminfo/x/xterm-256color
 mkdir /root
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
 tar -xvzf elinks.tar.gz
+export TERM=xterm-256color
