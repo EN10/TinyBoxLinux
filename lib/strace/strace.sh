@@ -1,9 +1,11 @@
+sudo apt install strace
+
 # path
 which strace
 /usr/bin/strace
 
 # shared libraries
-ldd /usr/bin/strace | awk '{print $3}'
+ldd /usr/bin/strace | awk '{print $3}' | sort > libs.txt
 /lib/x86_64-linux-gnu/librt.so.1
 /lib/x86_64-linux-gnu/libunwind-ptrace.so.0
 /lib/x86_64-linux-gnu/libunwind-x86_64.so.8
