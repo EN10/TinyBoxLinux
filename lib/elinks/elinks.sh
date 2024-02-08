@@ -40,8 +40,8 @@ ldd /usr/bin/elinks | awk '{print $3}' | sort > libs.txt
 
 mkdir -p lib/x86_64-linux-gnu
 xargs -a libs.txt cp -t lib/x86_64-linux-gnu
-cp /usr/bin/elinks .
 cp /lib/libfsplib.so.0 lib
+cp /usr/bin/elinks .
 tar -czvf elink.tar.gz lib/ elinks
 mv . usr/bin/elinks
 
