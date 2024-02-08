@@ -41,7 +41,9 @@ ldd /usr/bin/elinks | awk '{print $3}' | sort > libs.txt
 mkdir -p lib/x86_64-linux-gnu
 xargs -a libs.txt cp -t lib/x86_64-linux-gnu
 cp /usr/bin/elinks .
+cp /lib/libfsplib.so.0 lib
 tar -czvf elink.tar.gz lib/ elinks
+mv . usr/bin/elinks
 
 # install
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
