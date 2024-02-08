@@ -23,7 +23,10 @@ bin/sh: strace: not found
 # file type
 file usr/bin/strace 
 usr/bin/strace: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2 ...
+mkdir lib64
+cp /lib64/ld-linux-x86-64.so.2 lib64/ld-linux-x86-64.so.2
 
 # symbolic link
 ls -l lib64/ld-linux-x86-64.so.2 
 lib64/ld-linux-x86-64.so.2 -> /lib/x86_64-linux-gnu/ld-2.31.so
+cp /lib/x86_64-linux-gnu/ld-2.31.so lib/x86_64-linux-gnu/ld-2.31.so
