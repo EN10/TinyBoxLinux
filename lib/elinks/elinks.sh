@@ -41,13 +41,13 @@ ldd /usr/bin/elinks | awk '{print $3}' | sort > libs.txt
 ldd /usr/bin/elinks | awk '{print $1}' | sort
 /lib64/ld-linux-x86-64.so.2
 
-mkdir -p lib/x86_64-linux-gnu
+mkdir -p lib/x86_64-linux-gnu lib/terminfo/x usr/lib/x86_64-linux-gnu/gconv
 xargs -a libs.txt cp -t lib/x86_64-linux-gnu
 cp /lib/libfsplib.so.0 lib
 cp /usr/bin/elinks usr/bin/elinks
-mkdir -p lib/terminfo/x/
 cp /lib/terminfo/x/xterm-256color lib/terminfo/x/xterm-256color
-tar -czvf elinks.tar.gz lib/ lib64/ usr/bin/elinks lib/terminfo/x/xterm-256color
+cp /usr/lib/x86_64-linux-gnu/gconv/gconv* usr/lib/x86_64-linux-gnu/gconv/
+tar -czvf elinks.tar.gz lib/ lib64/ usr/bin/elinks lib/terminfo/x/xterm-256color usr/lib
 
 # install
 mkdir /root
