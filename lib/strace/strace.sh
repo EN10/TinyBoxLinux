@@ -37,3 +37,9 @@ tar -czvf strace.tar.gz usr/ lib/ lib64/
 # install strace.tar.gz
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/strace/strace.tar.gz
 tar -xvzf strace.tar.gz
+
+# test in chroot
+cd initramfs
+sudo chroot . /bin/sh
+mkdir proc
+mount -t proc none /proc
