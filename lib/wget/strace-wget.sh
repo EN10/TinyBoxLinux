@@ -7,7 +7,7 @@ sudo strace -ff -p 12345 -o trace
 ping -c1 google.com
 wget example.com
 cat trace.33459 | grep openat | grep -v ENOENT | awk '{print $2}'
-# https://github.com/EN10/BusyBoxLinux/blob/main/lib/trace.33459
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/wget/trace.33459
 
 "/etc/resolv.conf",
 "/lib/x86_64-linux-gnu//libnss_dns.so.2",
