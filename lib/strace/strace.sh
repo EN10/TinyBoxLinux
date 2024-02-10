@@ -39,6 +39,7 @@ wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/strace/strace.tar.gz
 tar -xvzf strace.tar.gz
 
 # test in chroot
+# https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/init
 cd initramfs
 sudo chroot . /bin/sh
 mkdir dev
