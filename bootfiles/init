@@ -13,6 +13,9 @@ mount -t devtmpfs none /dev   # dev/urandom (https)
 ifconfig eth0 10.0.2.15
 route add default gw 10.0.2.2
 
+# elinks
+export TERM=xterm-256color
+
 # Shell
 # https://wiki.gentoo.org/wiki/Custom_Initramfs#Job_control
 setsid cttyhack sh
