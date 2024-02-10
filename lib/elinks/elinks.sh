@@ -54,3 +54,8 @@ mkdir /root
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
 tar -xvzf elinks.tar.gz
 export TERM=xterm-256color
+
+elinks google.com
+The futex facility returned an unexpected error code.
+linux kernel - Enable futex support
+
