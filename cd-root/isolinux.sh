@@ -15,6 +15,7 @@ wget https://github.com/EN10/BusyBoxLinux/raw/main/bootfiles/bzImage
 wget https://github.com/EN10/BusyBoxLinux/raw/main/bootfiles/init.cpio.gz -O init.gz
 
 sudo apt install mkisofs
+cd ..
 mkisofs -o BusyBoxLinux.iso \
    -b isolinux/isolinux.bin -c isolinux/boot.cat \
    -no-emul-boot -boot-load-size 4 -boot-info-table \
