@@ -24,3 +24,7 @@ libc.so.6
 libnss_dns.so.2
 libnss_files.so.2
 libresolv.so.2
+
+# create lib-dns.tar.gz
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/wget/lib-dns.tar.gz
+tar -czvf lib-dns.tar.gz lib/
