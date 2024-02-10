@@ -41,5 +41,5 @@ tar -xvzf strace.tar.gz
 # test in chroot
 cd initramfs
 sudo chroot . /bin/sh
-mkdir proc
-mount -t proc none /proc
+mkdir dev
+mount -t devtmpfs none /dev
