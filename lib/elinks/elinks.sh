@@ -49,13 +49,12 @@ cp /lib/terminfo/x/xterm-256color lib/terminfo/x/xterm-256color
 cp /usr/lib/x86_64-linux-gnu/gconv/gconv* usr/lib/x86_64-linux-gnu/gconv/
 tar -czvf elinks.tar.gz lib/ lib64/ usr/bin/elinks lib/terminfo/x/xterm-256color usr/lib
 
-# install
-mkdir /root
-wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
-tar -xvzf elinks.tar.gz
-export TERM=xterm-256color
-
+# error
 elinks google.com
 The futex facility returned an unexpected error code.
 linux kernel - Enable futex support
 
+# install
+wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
+tar -xvzf elinks.tar.gz
+echo "elinks google.com/search?q=busybox"
