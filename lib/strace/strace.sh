@@ -30,3 +30,10 @@ cp /lib64/ld-linux-x86-64.so.2 lib64/ld-linux-x86-64.so.2
 ls -l lib64/ld-linux-x86-64.so.2 
 lib64/ld-linux-x86-64.so.2 -> /lib/x86_64-linux-gnu/ld-2.31.so
 cp /lib/x86_64-linux-gnu/ld-2.31.so lib/x86_64-linux-gnu/ld-2.31.so
+
+# create strace.tar.gz
+tar -czvf strace.tar.gz usr/ lib/ lib64/
+
+# install strace.tar.gz
+wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/strace/strace.tar.gz
+tar -xvzf strace.tar.gz
