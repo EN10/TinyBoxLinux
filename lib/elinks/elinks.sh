@@ -1,4 +1,4 @@
-# create
+# apt install
 sudo apt install elinks
 which elinks
 
@@ -37,10 +37,11 @@ ldd /usr/bin/elinks | awk '{print $3}' | sort > libs.txt
 /lib/x86_64-linux-gnu/libtinfo.so.6
 /lib/x86_64-linux-gnu/libtre.so.5
 /lib/x86_64-linux-gnu/libunistring.so.2
-
+# missing library
 ldd /usr/bin/elinks | awk '{print $1}' | sort
 /lib64/ld-linux-x86-64.so.2
 
+# create elinks.tar.gz
 mkdir -p lib/x86_64-linux-gnu lib/terminfo/x usr/lib/x86_64-linux-gnu/gconv
 xargs -a libs.txt cp -t lib/x86_64-linux-gnu
 cp /lib/libfsplib.so.0 lib
@@ -49,14 +50,14 @@ cp /lib/terminfo/x/xterm-256color lib/terminfo/x/xterm-256color
 cp /usr/lib/x86_64-linux-gnu/gconv/gconv* usr/lib/x86_64-linux-gnu/gconv/
 tar -czvf elinks.tar.gz lib/ lib64/ usr/bin/elinks lib/terminfo/x/xterm-256color usr/lib
 
-# https://github.com/EN10/BusyBoxLinux/blob/main/lib/elinks/strace.txt
+# Error: https://github.com/EN10/BusyBoxLinux/blob/main/lib/elinks/strace.txt
 elinks google.com
 The futex facility returned an unexpected error code.
 cd linux
 make menuconfig
 Enable futex support
 
-# install
+# install elinks.tar.gz
 wget https://github.com/EN10/BusyBoxLinux/raw/main/lib/elinks/elinks.tar.gz
 tar -xvzf elinks.tar.gz
 echo "elinks google.com/search?q=busybox"
