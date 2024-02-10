@@ -1,3 +1,6 @@
+# apt install libc6
+# https://github.com/EN10/BusyBoxLinux/blob/main/lib/wget/apt-libc6.sh
+
 cd initramfs
 sudo chroot . /bin/sh
 # mkdir proc
