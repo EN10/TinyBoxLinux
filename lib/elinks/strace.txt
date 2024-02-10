@@ -1,4 +1,3 @@
-
 execve("/usr/bin/elinks", ["/usr/bin/elinks", "google.com"], 0x7ffca16c6b08 /* 4 vars */) = 0
 brk(NULL)                               = 0x55c6a78a6000
 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe29af5100) = -1 EINVAL (Invalid argument)
