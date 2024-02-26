@@ -17,7 +17,7 @@ The BusyBox Linux Distro iso in `cd-root`:
 
 The BusyBox Linux Distro has 2 main files in `bootfiles`:
 
-* [Linux Kernel](https://www.kernel.org) 6.7.4: `bzImage` [2.6 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
+* [Linux Kernel](https://www.kernel.org) 6.7.6: `bzImage` [2.61 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.34 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
 
 
