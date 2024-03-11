@@ -34,6 +34,10 @@ Specify cores `-smp` and memory `-m`
 ```
 .\qemu-system-x86_64.exe -cdrom BusyBoxLinux.iso -smp 1 -m 512
 ```
+Windows Terminal
+```
+.\qemu-system-x86_64 -nographic -no-reboot -kernel .\bzImage -initrd initramfs.cpio.gz -append "console=ttyS0"
+```
 ### Simple Distro Setup
 * [Build defconfig Kernel & Busybox](https://github.com/EN10/BusyBoxLinux/blob/main/setup.sh)    
 `defconfig bzImage 12.8MB`
