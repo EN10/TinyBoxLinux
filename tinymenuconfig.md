@@ -20,7 +20,8 @@ docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 * N<ins>**e**</ins>tworking support - N<ins>**e**</ins>tworking options - <ins>**T**</ins>CP/IP networking
 * <ins>**D**</ins>evice Drivers - <ins>**P**</ins>CI support 
 * <ins>**D**</ins>evice Drivers - <ins>**G**</ins>enric Driver Options - M**a**intain a devtmpfs filesystem to mount at /dev - **A**utomount devtmpfs at /dev, after the kernel mounted the rootfs
-* <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY  
+* <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**E**</ins>nable TTY
+* <ins>**D**</ins>evice Drivers - <ins>**C**</ins>haracter devices - <ins>**S**</ins>erial drivers -  8250/16550 and compatible serial support - Console on 8250/16550 and compatible serial port
 * <ins>**D**</ins>evice Drivers - N<ins>**e**</ins>twork device support - <ins>**E**</ins>thernet driver support - <ins>**I**</ins>ntel devices - **I**ntel(R) PRO/1000 Gigabit Ethernet support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - /proc file system support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - sysfs file system support  
@@ -28,6 +29,7 @@ docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 Based on [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
 
 * `TTY` enables Console
+* `8250` enable `console=ttyS0` on Windows Terminal
 * `printk` enables kernel output on boot
 *  `futex` required by elinks
 *  `initial ramdisk gzip` enables init.cpio.gz
