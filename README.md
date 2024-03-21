@@ -1,6 +1,6 @@
-# BusyBox Linux
+# TinyBox Linux
 
-Tiny BusyBox Linux Distro from 4.94 MB
+TinyBox Linux Distro from 4.94 MB
 
 ### Based on:
 
@@ -12,8 +12,8 @@ Tiny BusyBox Linux Distro from 4.94 MB
 
 ### Distro Files:
 
-The BusyBox Linux Distro iso in `cd-root`:  
-* [BusyBoxLinux.iso 5.45 MB](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)  
+The TinyBox Linux Distro iso in `cd-root`:  
+* [TinyBoxLinux.iso 5.45 MB](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)  
 
 The BusyBox Linux Distro has 2 main files in `bootfiles`:
 
