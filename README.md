@@ -1,6 +1,6 @@
 # TinyBox Linux
 
-TinyBox Linux Distro from 4.94 MB
+TinyBox Linux Distro from 3.07 MB (Kernel + ToyBox initramfs)
 
 ### Based on:
 
