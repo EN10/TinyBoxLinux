@@ -13,7 +13,7 @@ TinyBox Linux Distro from 3.07 MB (Kernel + ToyBox initramfs)
 ### Distro Files:
 
 The TinyBox Linux Distro iso in `cd-root`:  
-* [TinyBoxLinux.iso 5.45 MB](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)  
+* [TinyBoxLinux.iso 3.61 MB](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/TinyBoxLinux.iso)  
 
 The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
@@ -23,9 +23,9 @@ The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
 
 ### Run on [QEMU](https://www.qemu.org):
-from `BusyBoxLinux.iso`
+from `TinyBoxLinux.iso`
 ```
-.\qemu-system-x86_64.exe -cdrom BusyBoxLinux.iso
+.\qemu-system-x86_64.exe -cdrom TinyBoxLinux.iso
 ```
 from `bzImage` and `init.cpio.gz`
 ```
@@ -33,7 +33,7 @@ from `bzImage` and `init.cpio.gz`
 ```
 Specify cores `-smp` and memory `-m`
 ```
-.\qemu-system-x86_64.exe -cdrom BusyBoxLinux.iso -smp 1 -m 512
+.\qemu-system-x86_64.exe -cdrom TinyBoxLinux.iso -smp 1 -m 512
 ```
 Windows Terminal
 ```
