@@ -51,4 +51,4 @@ Windows Terminal
 `./install-elinks.sh`
 ### Create bootable CD iso
 * [isolinux setup](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/isolinux.sh) - [BusyboxLinux.iso](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso) [TinyboxLinux.iso](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/TinyBoxLinux.iso)    
-`BusyBoxLinux.iso 5.45 MB`    `BusyBoxLinux.iso 3.61 MB`
+`BusyBoxLinux.iso 5.45 MB`    `TinyBoxLinux.iso 3.61 MB`
