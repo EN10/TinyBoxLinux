@@ -15,7 +15,7 @@ TinyBox Linux Distro from 4.94 MB
 The TinyBox Linux Distro iso in `cd-root`:  
 * [TinyBoxLinux.iso 5.45 MB](https://github.com/EN10/BusyBoxLinux/blob/main/cd-root/BusyBoxLinux.iso)  
 
-The BusyBox Linux Distro has 2 main files in `bootfiles`:
+The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
 * [Linux Kernel](https://www.kernel.org) 6.7.9: `bzImage` [2.6 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.34 MB](https://github.com/EN10/BusyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
