@@ -16,7 +16,7 @@ wget https://github.com/EN10/BusyBoxLinux/raw/main/bootfiles/init.cpio.gz -O ini
 
 sudo apt install mkisofs
 cd ..
-mkisofs -o BusyBoxLinux.iso \
+mkisofs -o TinyBoxLinux.iso \
    -b isolinux/isolinux.bin -c isolinux/boot.cat \
    -no-emul-boot -boot-load-size 4 -boot-info-table \
    cd-root
