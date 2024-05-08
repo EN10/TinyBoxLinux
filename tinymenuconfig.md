@@ -9,7 +9,7 @@ make -j 8
 docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 ```
 
-#### Linux/x84_64 6.7.y Kernel Configuration  </> for Search
+#### Linux/x84_64 6.8.y Kernel Configuration  </> for Search
 
 * <ins>**G**</ins>eneral setup - <ins>**I**</ins>nitial RAM filesystem and RAM disk - <ins>**S**</ins>upport initial ramdisk/ramfs compressed using gzip
 * <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure stamdard kernel features - <ins>**E**</ins>nable support for printk
@@ -26,7 +26,7 @@ docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - /proc file system support  
 * <ins>**F**</ins>ile systems - <ins>**p**</ins>seudo filesystems - sysfs file system support  
 
-Based on [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d)
+Based on [Building a tiny Linux kernel]([https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d](https://web.archive.org/web/20220106191229/https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d))
 
 * `TTY` enables Console
 * `8250` enable `console=ttyS0` on Windows Terminal
