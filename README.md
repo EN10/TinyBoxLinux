@@ -1,6 +1,6 @@
 # TinyBox Linux
 
-TinyBox Linux Distro from 3.07 MB (Kernel + ToyBox initramfs)
+TinyBox Linux Distro ~ 3 MB (Kernel + ToyBox initramfs)
 
 ### Based on:
 
@@ -17,7 +17,7 @@ The TinyBox Linux Distro iso in `cd-root`:
 
 The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
-* [Linux Kernel](https://www.kernel.org) 6.7.9: `bzImage` [2.6 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
+* [Linux Kernel](https://www.kernel.org) 6.8.9: `bzImage` [2.68 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.34 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
 * [ToyBox](https://landley.net/toybox) 0.8.10 `initramfs.cpio.gz` [472 KB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/initramfs.cpio.gz)
 
@@ -46,7 +46,7 @@ Windows Terminal
 * [Build BusyBox with Networking](https://github.com/EN10/TinyBoxLinux/blob/main/networking.sh) - [Identify Wget dependencies](https://github.com/EN10/TinyBoxLinux/blob/main/lib/wget/wget-libs.sh)    
 `BusyBox init.cpio.gz 2.34 MB`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/TinyBoxLinux/blob/main/tinymenuconfig.md)    
-`tinyconfig bzImage 2.6 MB`
+`tinyconfig bzImage 2.68 MB`
 * [Install Elinks browser](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/install-elinks.sh) - [Identify Elinks dependencies](https://github.com/EN10/TinyBoxLinux/blob/main/lib/elinks/elinks.sh)  
 `./install-elinks.sh`
 ### Create bootable CD iso
