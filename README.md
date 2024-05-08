@@ -37,7 +37,7 @@ Specify cores `-smp` and memory `-m`
 ```
 Windows Terminal
 ```
-.\qemu-system-x86_64 -kernel .\bzImage -initrd initramfs.cpio.gz -nographic -no-reboot -append "console=ttyS0"
+.\qemu-system-x86_64 -kernel .\bzImage -initrd initramfs.cpio.gz -no-reboot -nographic -append "console=ttyS0"
 ```
 ### Simple Distro Setup
 * [Build defconfig Kernel & Busybox](https://github.com/EN10/TinyBoxLinux/blob/main/setup.sh)    
