@@ -4,7 +4,7 @@ TinyBox Linux Distro from 3.07 MB (Kernel + ToyBox initramfs)
 
 ### Based on:
 
-* [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg) - [setup.sh](https://github.com/EN10/TinyBoxLinux/blob/main/setup.sh)
+* [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg) - [setup.sh](https://github.com/EN10/TinyBoxLinux/blob/main/setup.sh) - [crosscompile.sh](https://github.com/EN10/TinyBoxLinux/blob/main/CROSS_COMPILE.sh)
 * [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel-8c07579ae79d) - [menuconfig](https://github.com/EN10/TinyBoxLinux/blob/main/tinymenuconfig.md) 
 * [Networking from Gentoo Wiki](https://wiki.gentoo.org/wiki/Custom_Initramfs#Networking) - [networking.sh](https://github.com/EN10/TinyBoxLinux/blob/main/networking.sh) - [find Wget deps](https://github.com/EN10/TinyBoxLinux/blob/main/lib/wget/wget-libs.sh)    
 * [Find Library Dependencies](https://unix.stackexchange.com/questions/120015/how-to-find-out-the-dynamic-libraries-executables-loads-when-run) - [Wget, strace & Elinks](https://github.com/EN10/TinyBoxLinux/tree/main/lib)  
