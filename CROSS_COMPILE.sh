@@ -6,12 +6,15 @@ docker run --privileged -it ubuntu
 # kernel
 git clone --depth 1 https://github.com/torvalds/linux.git
 # git clone --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git -b linux-6.9.y
-# git checkout -b linux-6.10.y
-# git branch -d linux-6.9.y
-# git reset origin/linux-6.10.y
-# git reset --hard HEAD
-# git rebase --skip
+# git branch -v
+# git checkout tags/v6.10.2 -b 6.10
 # git pull --depth 1
+# ?? git rebase file conflict ??
+# git diff --name-only --diff-filter=U | xargs git checkout --theirs
+? # git add .
+? # git rebase --continue
+# git prune
+# git branch -D linux-6.9.y
 
 cd linux
 
