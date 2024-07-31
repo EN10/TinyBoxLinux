@@ -7,6 +7,7 @@ docker run --privileged -it ubuntu
 git clone --depth 1 https://github.com/torvalds/linux.git
 # git clone --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git -b linux-6.9.y
 # git branch -v
+# git tag -l
 # git checkout tags/v6.10.2 -b 6.10
 # git pull --depth 1
 # ?? git rebase file conflict ??
