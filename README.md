@@ -13,7 +13,7 @@ TinyBox Linux Distro ~ 3 MB (Kernel + ToyBox initramfs)
 ### Distro Files:
 
 The TinyBox Linux Distro iso in `cd-root`:  
-* [TinyBoxLinux.iso 3.61 MB](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/TinyBoxLinux.iso)  
+* [TinyBoxLinux.iso 3.61 MB](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/TinyBoxLinux.iso)  (Linux 6.7.9 & ToyBox 0.8.10)
 
 The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
