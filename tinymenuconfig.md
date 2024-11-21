@@ -9,11 +9,11 @@ make -j 8
 docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 ```
 
-#### Linux/x84_64 6.8.y Kernel Configuration  </> for Search
-
+#### Linux/x84_64 6.12.y Kernel Configuration  </> for Search
+* 64-<ins>**b**</ins>it kernel
 * <ins>**G**</ins>eneral setup - <ins>**I**</ins>nitial RAM filesystem and RAM disk - <ins>**S**</ins>upport initial ramdisk/ramfs compressed using gzip
-* <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure stamdard kernel features - <ins>**E**</ins>nable support for printk
-* <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure stamdard kernel features - <ins>**E**</ins>nable futex support 
+* <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure standard kernel features - <ins>**E**</ins>nable support for printk
+* <ins>**G**</ins>eneral setup - <ins>**C**</ins>onfigure standard kernel features - <ins>**E**</ins>nable futex support 
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for ELF binaries
 * <ins>**E**</ins>xecutable file formats -  <ins>**K**</ins>ernel support for scripts starting with #!
 * N<ins>**e**</ins>tworking support - N<ins>**e**</ins>tworking options - <ins>**U**</ins>nix domain sockets 
