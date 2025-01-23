@@ -4,8 +4,7 @@ sudo wget -O ~/initramfs.cpio.gz \
 ```
 
 ``` bash
-sudo wget -O /usr/lib/syslinux/isolinux.bin \
-  https://raw.githubusercontent.com/EN10/TinyBoxLinux/main/cd-root/isolinux.bin
+curl -sL https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz | tar -xJf - syslinux-6.03/bios/core/isolinux.bin syslinux-6.03/bios/com32/elflink/ldlinux/ldlinux.c32 && mkdir -p /usr/lib/syslinux && mv syslinux-6.03/bios/core/isolinux.bin syslinux-6.03/bios/com32/elflink/ldlinux/ldlinux.c32 /usr/lib/syslinux/ && rm -rf syslinux-6.03
 ```
 
 ``` bash
