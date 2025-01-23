@@ -1,6 +1,6 @@
 ``` bash
-sudo wget -O ~/initramfs.cpio.gz \
-  https://raw.githubusercontent.com/EN10/TinyBoxLinux/main/bootfiles/initramfs.cpio.gz
+curl -sL https://landley.net/bin/mkroot/0.8.12/x86_64.tgz | \
+  tar -xz -C ~ -f - --strip-components=1 x86_64/initramfs.cpio.gz
 ```
 
 ``` bash
