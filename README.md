@@ -8,7 +8,7 @@ TinyBox Linux Distro ~ 3 MB (Kernel + ToyBox initramfs)
 * [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel) - [menuconfig](https://github.com/EN10/TinyBoxLinux/blob/main/tinymenuconfig.md) 
 * [Networking from Gentoo Wiki](https://wiki.gentoo.org/wiki/Custom_Initramfs#Networking) - [networking.sh](https://github.com/EN10/TinyBoxLinux/blob/main/networking.sh) - [find Wget deps](https://github.com/EN10/TinyBoxLinux/blob/main/lib/wget/wget-libs.sh)    
 * [Find Library Dependencies](https://unix.stackexchange.com/questions/120015/how-to-find-out-the-dynamic-libraries-executables-loads-when-run) - [Wget, strace & Elinks](https://github.com/EN10/TinyBoxLinux/tree/main/lib)  
-* [Make a Bootable CD With ISOLINUX](https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX) - [isolinux.sh](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/isolinux.sh)
+* [Make a Bootable CD With ISOLINUX](https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX) - [make isoimage](https://github.com/EN10/TinyBoxLinux/blob/main/make-isoimage.md)
 
 ### Distro Files:
 
