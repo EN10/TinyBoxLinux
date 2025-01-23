@@ -4,10 +4,13 @@ This guide explains how to create a custom bootable Linux ISO image using Syslin
 
 ## Prerequisites
 
-- Linux development environment
-- `curl` and `tar` utilities
-- `sudo` privileges
-- GNU Make
+Required packages on Ubuntu/Debian:
+```shell
+sudo apt update
+sudo apt install build-essential git curl tar
+```
+
+You'll need about 3GB of free disk space for the build process.
 
 ## Build Steps
 
@@ -41,7 +44,27 @@ curl -sL https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.
 
 ### 3. Build Bootable ISO Image
 
-Compile the final ISO image using Make with the following configuration:
+First, download the Linux kernel source code:
+
+```shell
+git clone --branch linux-6.12.y --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+cd linux-stable
+```
+
+Configure the kernel with the smallest possible configuration:
+
+```shell
+make tinyconfig
+```
+
+This creates a minimal kernel configuration with the bare essentials needed to boot. It's perfect for creating a small ISO image, but may need additional features enabled depending on your hardware requirements.
+
+Note: If you need to enable additional features after running tinyconfig, use:
+```shell
+make menuconfig    # Requires ncurses-dev package
+```
+
+Compile the Linux kernel and create the final ISO image using Make with the following configuration:
 
 ```shell
 make isoimage \
@@ -53,26 +76,22 @@ make isoimage \
   -j 4
 ```
 
+This command will:
+1. Build the Linux kernel with the specified architecture and compiler
+2. Package the kernel with the initramfs and bootloader into an ISO image
+
 ## Component Details
 
 ### Key Files
-- `initramfs.cpio.gz`: Initial RAM filesystem containing the minimal root filesystem required for system initialization
-- `isolinux.bin`: BIOS bootloader binary for CD/DVD boot media
-- `ldlinux.c32`: Core Syslinux module responsible for loading system files
+- `initramfs.cpio.gz`: Initial RAM filesystem for system initialization
+- `isolinux.bin`: BIOS bootloader binary
+- `ldlinux.c32`: Core Syslinux module
+- `vmlinuz`: Compiled Linux kernel
 
 ### Build Parameters
-- `FDARGS`: Kernel command line arguments specifying the initramfs location
-- `FDINITRD`: Path to the initial RAM disk file
-- `ISOLINUX_BIN`: Location of the ISOLINUX bootloader binary
-- `ARCH`: Target architecture (x86_64)
-- `CROSS_COMPILE`: Toolchain prefix for cross-compilation
-- `-j 4`: Enable parallel compilation using 4 cores
-
-## Output
-
-After successful completion, you'll have a bootable ISO image that can be written to a CD/DVD or USB drive using appropriate tools.
-
-## Notes
-- Ensure all prerequisites are installed before starting the build process
-- The build process requires sufficient disk space for temporary files
-- Cross-compilation toolchain must be installed if building for a different architecture
+- `FDARGS`: Kernel command line arguments
+- `FDINITRD`: Path to initramfs
+- `ISOLINUX_BIN`: Path to bootloader binary
+- `ARCH`: Target architecture
+- `CROSS_COMPILE`: Toolchain prefix
+- `-j 4`: Number of parallel build jobs
