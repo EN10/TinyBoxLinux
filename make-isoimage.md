@@ -4,7 +4,16 @@ sudo wget -O ~/initramfs.cpio.gz \
 ```
 
 ``` bash
-curl -sL https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz | tar -xJf - syslinux-6.03/bios/core/isolinux.bin syslinux-6.03/bios/com32/elflink/ldlinux/ldlinux.c32 && mkdir -p /usr/lib/syslinux && mv syslinux-6.03/bios/core/isolinux.bin syslinux-6.03/bios/com32/elflink/ldlinux/ldlinux.c32 /usr/lib/syslinux/ && rm -rf syslinux-6.03
+curl -sL https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz | \
+  tar -xJf - \
+    syslinux-6.03/bios/core/isolinux.bin \
+    syslinux-6.03/bios/com32/elflink/ldlinux/ldlinux.c32 && \
+  sudo mkdir -p /usr/lib/syslinux && \
+  sudo mv \
+    syslinux-6.03/bios/core/isolinux.bin \
+    syslinux-6.03/bios/com32/elflink/ldlinux/ldlinux.c32 \
+    /usr/lib/syslinux/ && \
+  rm -rf syslinux-6.03
 ```
 
 ``` bash
