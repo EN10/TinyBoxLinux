@@ -19,7 +19,7 @@ The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
 * [Linux Kernel](https://www.kernel.org) 6.12.0: `bzImage` [1.48 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/bzImage_6.12.0) (tinyconfig + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.34 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
-* [ToyBox](https://landley.net/toybox) 0.8.11 `initramfs.cpio.gz` [526 KB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/initramfs.cpio.gz)
+* [ToyBox](https://landley.net/toybox) 0.8.12 `initramfs.cpio.gz` [530 KB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/initramfs.cpio.gz)
 
 
 ### Run on [QEMU](https://www.qemu.org):
