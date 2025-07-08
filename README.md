@@ -39,6 +39,15 @@ Windows Terminal
 ```
 .\qemu-system-x86_64 -kernel .\bzImage -initrd initramfs.cpio.gz -no-reboot -nographic -append "console=ttyS0"
 ```
+### Update on aarch64
+
+```
+git clone -b linux-6.99.y --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+wget https://raw.githubusercontent.com/EN10/TinyBoxLinux/refs/heads/main/bootfiles/.config
+time yes "" | make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 4
+```
+
+
 ### Simple Distro Setup
 * [Build defconfig Kernel & Busybox](https://github.com/EN10/TinyBoxLinux/blob/main/setup.sh)    
 `defconfig bzImage 12.8MB`
