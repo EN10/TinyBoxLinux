@@ -22,6 +22,16 @@ The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 * [ToyBox](https://landley.net/toybox) 0.8.13 `initramfs.cpio.gz` [500 KB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/initramfs.cpio.gz) - [latest precompiled](https://landley.net/bin/mkroot)
 
 
+### QEMU Setup for Windows
+* [QEMU Prebuilt Zip](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/qemu-extracted.zip)
+
+Exe files can be downloaded from here: https://qemu.weilnetz.de/w64/
+
+To recreate the zip using a downloaded installer:
+```bash
+./extract_qemu.sh qemu-w64-setup-20250826.exe
+```
+
 ### Run on [QEMU](https://www.qemu.org):
 from `image.iso`
 ```

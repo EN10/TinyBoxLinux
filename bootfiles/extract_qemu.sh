@@ -42,4 +42,9 @@ echo "Zipping $OUTPUT_DIR to $ZIP_FILE..."
 # -mx=9: ultra compression
 7z a -tzip -mx=9 "$ZIP_FILE" "$OUTPUT_DIR"
 
-echo "Done! Files extracted to $OUTPUT_DIR and zipped to $ZIP_FILE"
+# Cleanup input exe and extracted folder
+echo "Cleaning up $INPUT_EXE and $OUTPUT_DIR..."
+rm "$INPUT_EXE"
+rm -rf "$OUTPUT_DIR"
+
+echo "Done! Files extracted and zipped to $ZIP_FILE"
