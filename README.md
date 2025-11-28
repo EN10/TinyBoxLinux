@@ -23,7 +23,7 @@ The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
 
 ### QEMU Setup for Windows
-* [QEMU Prebuilt Zip](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/qemu-extracted.zip)
+* [QEMU Prebuilt Zip](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/qemu-extracted.zip) [38.5 MB] - concise version of the installer [172 MB]
 
 Exe files can be downloaded from here: https://qemu.weilnetz.de/w64/
 
