@@ -20,7 +20,7 @@ The initramfs provides the minimal root filesystem needed during the boot proces
 
 ```shell
 # Download and extract minimal initramfs for boot initialization
-curl -sL https://landley.net/bin/mkroot/0.8.12/x86_64.tgz | \
+curl -sL https://landley.net/bin/mkroot/0.8.13/x86_64.tgz | \
   tar -xz -C ~ -f - --strip-components=1 x86_64/initramfs.cpio.gz
 ```
 
@@ -47,7 +47,7 @@ curl -sL https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.
 First, download the Linux kernel source code:
 
 ```shell
-git clone --branch linux-6.12.y --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+git clone --branch linux-6.17.y --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 cd linux-stable
 ```
 

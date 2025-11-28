@@ -13,13 +13,13 @@ TinyBox Linux Distro ~ 2 MB (Kernel + ToyBox initramfs)
 ### Distro Files:
 
 The TinyBox Linux Distro iso in `cd-root`:  
-* `image.iso` [3.56 MB](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/image.iso)  (Linux 6.12.101 & ToyBox 0.8.12)
+* `image.iso` [3.56 MB](https://github.com/EN10/TinyBoxLinux/blob/main/cd-root/image.iso)  (Linux 6.17.91 & ToyBox 0.8.13)
 
 The BusyBox Linux Distro has 2 (BusyBox OR ToyBox) main files in `bootfiles`:
 
-* [Linux Kernel](https://www.kernel.org) 6.15.51: `bzImage` [2.6 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
+* [Linux Kernel](https://www.kernel.org) 6.17.91: `bzImage` [2.65 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/bzImage) (tinyconfig + networking)
 * [BusyBox](https://busybox.net) 1.37.0: `init.cpio.gz` [2.34 MB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/init.cpio.gz) (with networking)
-* [ToyBox](https://landley.net/toybox) 0.8.12 `initramfs.cpio.gz` [530 KB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/initramfs.cpio.gz) - [latest precompiled](https://landley.net/bin/mkroot)
+* [ToyBox](https://landley.net/toybox) 0.8.13 `initramfs.cpio.gz` [500 KB](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/initramfs.cpio.gz) - [latest precompiled](https://landley.net/bin/mkroot)
 
 
 ### Run on [QEMU](https://www.qemu.org):
@@ -55,7 +55,7 @@ time yes "" | make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 4
 * [Build BusyBox with Networking](https://github.com/EN10/TinyBoxLinux/blob/main/networking.sh) - [Identify Wget dependencies](https://github.com/EN10/TinyBoxLinux/blob/main/lib/wget/wget-libs.sh)    
 `BusyBox init.cpio.gz 2.34 MB`
 * [Build tinyconfig Kernel with Networking](https://github.com/EN10/TinyBoxLinux/blob/main/tinymenuconfig.md)    
-`tinyconfig bzImage 2.68 MB`
+`tinyconfig bzImage 2.65 MB`
 * [Install Elinks browser](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/install-elinks.sh) - [Identify Elinks dependencies](https://github.com/EN10/TinyBoxLinux/blob/main/lib/elinks/elinks.sh)  
 `./install-elinks.sh`
 ### Create bootable CD iso
