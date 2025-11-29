@@ -80,6 +80,8 @@ This command will:
 1. Build the Linux kernel with the specified architecture and compiler
 2. Package the kernel with the initramfs and bootloader into an ISO image
 
+After the build completes, you can find the generated ISO file at `arch/x86/boot/image.iso`.
+
 ## Component Details
 
 ### Key Files
