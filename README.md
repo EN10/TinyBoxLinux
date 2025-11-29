@@ -10,9 +10,9 @@ TinyBox Linux is a minimal, educational Linux distribution built from scratch. I
 *   **ToyBox**: Uses minimal utilities for the shell and user environment.
 
 ## Current Versions & Sizes
-*   **Linux Kernel**: 6.17.91 (`bzImage`: 2.65 MB)
-*   **ToyBox**: 0.8.13 (`initramfs.cpio.gz`: 500 KB)
-*   **ISO Image**: `image.iso`: 3.56 MB
+*   **Linux Kernel**: 6.17.91 ([`bzImage`](bootfiles/bzImage): 2.65 MB)
+*   **ToyBox**: 0.8.13 ([`initramfs.cpio.gz`](bootfiles/initramfs.cpio.gz): 500 KB)
+*   **ISO Image**: [`image.iso`](cd-root/image.iso): 3.56 MB
 
 ## Quick Start
 
@@ -32,7 +32,7 @@ To recreate the zip using a downloaded installer:
 ```
 
 ### Running Pre-built Images
-You can run the pre-built images located in `bootfiles/` or `cd-root/` using QEMU.
+You can run the pre-built images located in [`bootfiles/`](bootfiles/) or [`cd-root/`](cd-root/) using QEMU.
 
 **On Windows:**
 ```powershell
@@ -50,7 +50,7 @@ The build process is divided into three main parts: the Kernel, the Userspace (R
 ### 1. Build the Kernel (`bzImage`)
 The kernel is the core of the OS. We use a minimal configuration.
 
-*   **Script**: `setup.sh` (for defconfig) or follow `tinymenuconfig.md` (for tinyconfig).
+*   **Script**: [`setup.sh`](setup.sh) (for defconfig) or follow [`tinymenuconfig.md`](tinymenuconfig.md) (for tinyconfig).
 *   **Process**:
     1.  Clone the Linux kernel source.
     2.  Configure it (`make tinyconfig` then `make menuconfig`).
@@ -68,7 +68,7 @@ time yes "" | make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- -j 4
 ### 2. Get the Userspace (ToyBox)
 The userspace contains the shell (`/bin/sh`) and utilities (`ls`, `cp`, `ip`, etc.). We use ToyBox.
 
-*   **Guide**: `toybox.md`
+*   **Guide**: [`toybox.md`](toybox.md)
 *   **Process**:
     1.  Download the latest pre-built root filesystem from [landley.net](https://landley.net/toybox/downloads/binaries/mkroot/latest/x86_64.tgz).
     2.  Extract `initramfs.cpio.gz`.
@@ -76,22 +76,22 @@ The userspace contains the shell (`/bin/sh`) and utilities (`ls`, `cp`, `ip`, et
 ### 3. Create Bootable ISO
 To boot from a CD/DVD or USB, we wrap the Kernel and Initramfs into an ISO using Syslinux.
 
-*   **Guide**: `make-isoimage.md`
+*   **Guide**: [`make-isoimage.md`](make-isoimage.md)
 *   **Process**:
     1.  Install `syslinux` and `isolinux`.
-    2.  Use the kernel's `make isoimage` target or manually create the ISO structure with `isolinux.bin` and `isolinux.cfg`.
+    2.  Use the kernel's `make isoimage` target or manually create the ISO structure with [`isolinux.bin`](cd-root/isolinux.bin) and `isolinux.cfg`.
     3.  Note: Ensure you point to the correct initramfs (`initramfs.cpio.gz`).
 
 ## Directory Structure
 
-*   `bootfiles/`: Contains the compiled kernel (`bzImage`) and initramfs (`initramfs.cpio.gz`). Also contains QEMU helper scripts.
-*   `cd-root/`: Contains the ISO image and ISOLINUX configuration.
-*   `lib/`: Helper scripts for finding dependencies and installing extra packages (like `elinks`, `wget`, `strace`).
-*   `setup.sh`: Script to setup the environment and build a basic system.
-*   `networking.sh`: Script to build BusyBox with networking support.
-*   `tinymenuconfig.md`: Documentation for the minimal kernel configuration.
-*   `toybox.md`: Documentation for ToyBox.
-*   `CROSS_COMPILE.sh`: Helper for cross-compiling.
+*   [`bootfiles/`](bootfiles/): Contains the compiled kernel ([`bzImage`](bootfiles/bzImage)) and initramfs ([`initramfs.cpio.gz`](bootfiles/initramfs.cpio.gz)). Also contains QEMU helper scripts.
+*   [`cd-root/`](cd-root/): Contains the ISO image and ISOLINUX configuration.
+*   [`lib/`](lib/): Helper scripts for finding dependencies and installing extra packages (like `elinks`, `wget`, `strace`).
+*   [`setup.sh`](setup.sh): Script to setup the environment and build a basic system.
+*   [`networking.sh`](networking.sh): Script to build BusyBox with networking support.
+*   [`tinymenuconfig.md`](tinymenuconfig.md): Documentation for the minimal kernel configuration.
+*   [`toybox.md`](toybox.md): Documentation for ToyBox.
+*   [`CROSS_COMPILE.sh`](CROSS_COMPILE.sh): Helper for cross-compiling.
 
 ## References & Credits
 
