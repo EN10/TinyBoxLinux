@@ -10,8 +10,8 @@ TinyBox Linux is a minimal, educational Linux distribution built from scratch. I
 *   **ToyBox**: Uses minimal utilities for the shell and user environment.
 
 ## Current Versions & Sizes
-*   **Linux Kernel**: 6.17.91 ([`bzImage`](bootfiles/bzImage): 2.65 MB)
-*   **ToyBox**: 0.8.13 ([`initramfs.cpio.gz`](bootfiles/initramfs.cpio.gz): 500 KB)
+*   **[Linux Kernel](https://www.kernel.org/)**: 6.17.91 ([`bzImage`](bootfiles/bzImage): 2.65 MB)
+*   **[ToyBox](https://landley.net/toybox/)**: 0.8.13 ([`initramfs.cpio.gz`](bootfiles/initramfs.cpio.gz): 500 KB)
 *   **ISO Image**: [`image.iso`](cd-root/image.iso): 3.56 MB
 
 ## Quick Start
@@ -100,5 +100,4 @@ To boot from a CD/DVD or USB, we wrap the Kernel and Initramfs into an ISO using
 *   [Networking from Gentoo Wiki](https://wiki.gentoo.org/wiki/Custom_Initramfs#Networking) - [networking.sh](https://github.com/EN10/TinyBoxLinux/blob/main/networking.sh)
 *   [Find Library Dependencies](https://unix.stackexchange.com/questions/120015/how-to-find-out-the-dynamic-libraries-executables-loads-when-run)
 *   [Make a Bootable CD With ISOLINUX](https://wiki.syslinux.org/wiki/index.php?title=ISOLINUX) - [make isoimage](https://github.com/EN10/TinyBoxLinux/blob/main/make-isoimage.md)
-*   [BusyBox](https://busybox.net)
-*   [ToyBox](https://landley.net/toybox)
+*   [BusyBox](https://busybox.net), [ToyBox](https://landley.net/toybox)
