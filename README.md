@@ -12,7 +12,7 @@ TinyBox Linux is a minimal, educational Linux distribution built from scratch. I
 ## Current Versions & Sizes
 *   **[Linux Kernel](https://www.kernel.org/)**: 6.17.91 ([`bzImage`](bootfiles/bzImage): 2.65 MB)
 *   **[ToyBox](https://landley.net/toybox/)**: 0.8.13 ([`initramfs.cpio.gz`](bootfiles/initramfs.cpio.gz): 500 KB)
-*   **ISO Image**: [`image.iso`](cd-root/image.iso): 3.56 MB
+*   **ISO Image**: [`image.iso`](cd-root/image.iso): 3.7 MB
 
 ## Quick Start
 
