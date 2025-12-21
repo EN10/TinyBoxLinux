@@ -3,7 +3,7 @@
 # Check if the input file is provided
 if [ -z "$1" ]; then
     echo "Usage: $0 <path_to_qemu_setup.exe>"
-    echo "Example: $0 qemu-w64-setup-20250826.exe"
+    echo "Example: $0 qemu-w64-setup-20251217.exe"
     exit 1
 fi
 
