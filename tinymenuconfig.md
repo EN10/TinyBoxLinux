@@ -6,6 +6,7 @@ make tinyconfig
 # </> for Search
 make menuconfig
 make -j 8
+make kernelrelease
 docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 ```
 
