@@ -5,7 +5,7 @@ cd linux
 make tinyconfig
 # </> for Search
 make menuconfig
-make -j$(nproc) bzImage
+make -j 8
 docker cp CONTAINER_ID:/root/linux/arch/x86/boot/bzImage ./
 ```
 
